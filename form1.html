@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form1.css">
+    <script src="form1.js" defer></script>
+</head>
+<body>
+    <div id="image-container">
+        <div id="images">
+            <div id="bg1" style="background-color: red;"></div>
+            <div id="bg2" style="background-color: green;"></div>
+            <div id="bg3" style="background-color: blue;"></div>
+            <button id="prev">&#10094</button>
+            <button id="next">&#10095</button>
+        </div>
+    </div>
+    <div id="container">
+        <div class="heading">
+            <h1>Form</h1>
+        </div>
+        <form id="form">
+            <div class="label_input">
+                <label for="first">First Name : </label>
+            <input type="text" id="first">
+            <label id="first_error" class="error">Enter valid first name !</label><br>
+            </div>
+            <div class="label_input">
+                <label for="middle">Middle Name : </label>
+                <input type="text" id="middle">
+                <label id="middle_error" class="error">Enter valid middle name !</label><br>
+            </div>
+            <div class="label_input">
+                <label for="last">Last Name : </label>
+            <input type="text" id="last">
+            <label id="last_error" class="error">Enter valid Last name !</label><br>
+            </div>
+            <div>
+                <label for="full" id="fullname"></label><br>
+            </div>
+            <div class="label_input">
+                <label for="phn">Phone Number : </label>
+            <input type="text" id="phn">
+            <label id="phn_error" class="error">Enter valid Phone Number !</label><br>
+            </div>
+            <div class="label_input">
+                <label for="password">Password : </label>
+                <input type="password" id="password">
+                <label id="toggle">👁</label>
+                <label id="password_error" class="error">Password should be atleast 6 characters !</label><br>
+            </div>
+            <div class="label_input">
+                <label>Hobbies : </label>
+            <input type="checkbox" id="playing" name="hobby">
+            <label for="Playing">Playing</label>
+            <input type="checkbox" id="reading" name="hobby">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="singing" name="hobby">
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="dancing" name="hobby">
+            <label for="dancing">Dancing</label>
+            <label id="hobby_error" class="error">Select more Hobbies !</label><br>
+            </div>
+            <div class="label_input">
+                <label for="photo">Passport size Photo : </label>
+            <input type="file" id="photo">
+            <label id="photo_error" class="error">Upload a valid file !</label><br>
+            </div>
+            <div class="label_input">
+                <label for="email">Email : </label>
+                <input type="email" id="email"><br>
+            </div>
+            <div class="label_input">
+                <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" required>
+            <label id="dob_error" class="error">Invalid Date of Birth !</label><br>
+            </div>
+            <label id="age"></label><br>
+            <div class="label_input">
+                <label for="address">Address : </label>
+            <textarea name="add" id="address" rows="3" cols="20"></textarea>
+            <label id="address_error" class="error">Enter valid Address !</label><br>
+            </div>
+            <div class="label_input">
+                <input type="checkbox" id="agreement">
+            <label for="agreement">I agree to the terms of the company</label>
+            <label id="agreement_error" class="error">Agree to the terms !</label><br>
+            </div>
+            <div class="buttons">
+                <input type="submit"><input type="reset" id="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
